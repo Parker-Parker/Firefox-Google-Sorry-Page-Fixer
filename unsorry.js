@@ -1,5 +1,4 @@
 
-// console.log("III'M COOOOOOUUUUUMMMMMM EEEEEEENG");
 // console.log(browser.tabs.getCurrent().url);
 // console.log(browser.tabs.getCurrent().id);
 console.log(document.getElementsByTagName("div"))
