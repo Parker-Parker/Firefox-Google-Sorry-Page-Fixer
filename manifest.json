@@ -11,10 +11,9 @@
         }
     ],
     "browser_action": {
-        "default_title": "Google Sorry Fixer",
-        "default_popup": "popup/popup.html"
+        "default_title": "Google Sorry Fixer"
     },
-
+    
     "browser_specific_settings": {
         "gecko": {
           "id": "todo@Parker-Parker.Github.io"
