@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Video Speed Extension",
+    "version": "0.5",
+    "description": "Allow setting arbitrary playback speed of youtube videos",
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["*://*.youtube.com/watch*"],
+            "js": ["vidspd.js"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "Video Speed Extension",
+        "default_popup": "popup/popup.html"
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "Youtube-Video-Speed-Changer@Parker-Parker.Github.io"
+        }
+    }, 
+
+    "permissions": [
+        "storage"
+    ]
+    
+}
