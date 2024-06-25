@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Google Unusual Traffic Page Fixer",
-    "version": "0.5",
+    "version": "0.6",
     "description": "Easily manually navigate to intended page after hitting Google 'unusual traffic' gate",
     "content_scripts": [
         {
@@ -10,9 +10,6 @@
             "js": ["unsorry.js"]
         }
     ],
-    "browser_action": {
-        "default_title": "Google Sorry Fixer"
-    },
     
     "browser_specific_settings": {
         "gecko": {
