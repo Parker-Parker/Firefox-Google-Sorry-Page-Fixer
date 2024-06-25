@@ -36,6 +36,25 @@ for (i=0; i<divs.length; i++){
 }
 
 
+// window.onfocus = () => {window.location.replace(url)}
+
+
+
+
+let link2 = document.createElement("a");
+link2.setAttribute("href", url);
+link2.appendChild(document.createTextNode("!!!!!!!!!!!!! GO TO URL: "+url+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" ));
+document.body.appendChild(link2);
+
+redirectstarted = false;
+const redir = () => {if(!redirectstarted){link2.click(); redirectstarted=true;}};
+window.onfocus = redir;
+window.onBlur = redir;
+document.body.addEventListener('mousemove',(e) => {redir()});
+
+//  document.body.addEventListener("mouseenter")
+
+
 // browser.browserAction.onClicked.addListener( //can only be done with BG script
 //   (tab) => {
 //     if(tab.id == browser.tabs.getCurrent().id){
